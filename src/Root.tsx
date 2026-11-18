@@ -1,4 +1,5 @@
 import React from "react";
+import { BrainFactsVideo } from "./BrainFacts";
 import {
   AbsoluteFill,
   Composition,
@@ -236,6 +237,14 @@ export const RemotionRoot: React.FC = () => {
         id="AthensOnFire"
         component={AthensVideo}
         durationInFrames={1800}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BrainFactsPersian"
+        component={BrainFactsVideo}
+        durationInFrames={5400}
         fps={30}
         width={1080}
         height={1920}
