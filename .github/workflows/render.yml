@@ -24,12 +24,12 @@ jobs:
         run: npm ci
 
       - name: Render video
-        run: npx remotion render src/index.ts BrainFactsPersian out/BrainFactsPersian.mp4
+        run: npx remotion render src/index.ts DeepOceanDocumentary out/DeepOceanDocumentary.mp4
 
       - name: Upload rendered video
         uses: actions/upload-artifact@v4
         with:
-          name: BrainFactsPersian-MP4
-          path: out/BrainFactsPersian.mp4
+          name: DeepOceanDocumentary-MP4
+          path: out/DeepOceanDocumentary.mp4
           if-no-files-found: error
           retention-days: 7
